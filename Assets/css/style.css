@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 
 @font-face {
-    font-family: 'rajdhani';
+    font-family:'rajdhani', 'Space-Grotesk';
     src: url(../police/Rajdhani.ttf);
+    src: url(../police/SpaceGrotesk.ttf);
+    font-weight: normal;
+    font-style: normal;
 }
 
 :root{
@@ -10,6 +13,10 @@
     --yellow-light: #f8f184;
     --blue-color:#19587d;
     --white-color:#ffffff;
+    --black-color:#000000;
+    --bg-color:#C4C4C4;
+    --btn-color:#EDDEBF;
+    --btn1-color:#890008;
 }
 
 *{
@@ -18,10 +25,87 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+h3{
+    font-family:'rajdhani';
+}
+
+button{
+    font-family: 'rajdhani';
+    font-size: 20px;
+    font-weight: 400;
+}
+/*container*/
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+body{
+    background-color: var(--black-color);
+    color: var(--white-color);
+    font-family: 'Space Grotesk';
+}
+
+/* section header navbar */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+/* section header*/
+ul{
+    list-style: none;
+}
+/* section header navbar */
+nav ul a{
+    color: var(--white-color);
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'rajdhani';
+}
+/* section header navbar */
+nav ul a:hover{
+    color:var(--btn-color);
+}
+/* section main*/
 #hero{
     background-image: url(../Illustrations/Bathome1.png);
     height: 800px;
     background-position: top center;
     background-repeat: no-repeat;
-    background-color: #000000;
+    background-color:var(--black-color);
+    background-size: cover;
+}
+/*section main hero*/
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 150px;
+}
+
+#hero .titre{
+    margin: 40px 0;
+}
+/*section main hero*/
+.btn{
+    text-decoration: none;
+    color: var(--white-color);
+    background-image: linear-gradient(80deg, var(--btn-color) , var(--btn1-color));
+    font-size: 22px;
+    padding: 10px 20px;
+}
+
+/* section batman personnage*/
+.batman-personnage{
+    display: flex;
+    justify-content: space-between;
 }
