@@ -10,13 +10,13 @@
 
 :root{
     --yellow-color:#FFFF00;
-    --yellow-light: #f8f184;
+    --yellow-light: #f8f184; 
     --blue-color:#19587d;
     --white-color:#ffffff;
     --black-color:#000000;
     --bg-color:#C4C4C4;
-    --btn-color:#EDDEBF;
-    --btn1-color:#890008;
+    --gradient-color:#EDDEBF;
+    --gradient1-color:#890008;
 }
 
 *{
@@ -57,6 +57,12 @@ nav{
     justify-content: space-between;
     padding: 30px 0;
 }
+/*section link */
+a{
+    color: var(--white-color);
+    font-size: 25px;
+    font-weight: 500;
+}
 /* section header*/
 ul{
     list-style: none;
@@ -72,6 +78,7 @@ nav ul a{
 nav ul a:hover{
     color:var(--btn-color);
 }
+
 /* section main*/
 #hero{
     background-image: url(../Illustrations/Bathome1.png);
@@ -99,13 +106,58 @@ nav ul a:hover{
 .btn{
     text-decoration: none;
     color: var(--white-color);
-    background-image: linear-gradient(80deg, var(--btn-color) , var(--btn1-color));
     font-size: 22px;
-    padding: 10px 20px;
+    padding: 3px 30px;
+    background: linear-gradient(8deg,var(--gradient-color),var(--gradient1-color));
+    box-shadow: var(--black-color) 5px 5px 60px;
+}
+/*section fleche hero*/
+#hero .fleche{
+    display: block;
+    margin: 0 auto;
+    margin-top: 40vh;
+}
+/*section image scroll*/
+.scroll{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    right: 50px;
+    top: 240px;
+}
+.scroll .social{
+    margin-top: 15px;
+}
+/* section div batman personage cinema*/
+#batman-cinema{
+    margin-top: 40px;
 }
 
-/* section batman personnage*/
-.batman-personnage{
+/* section div batman personage*/
+.batman-personage{
     display: flex;
     justify-content: space-between;
 }
+/* section div batman personage cinema*/
+#batman-cinema .titre{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 30px 0;
+}
+#batman-cinema .description{
+    margin-bottom: 40px;
+    text-align: justify;
+    width: 80%;
+    font-size: 21px;
+}
+#batman-cinema .personnage-info{
+    text-align: center;
+}
+/*section allies*/
+#nemesis{
+    margin: 0 102px;
+    padding:30px 100px 180px 100px;
+    border-left: 3.5px var(--bg-color) solid ;
+    border-right: 3.5px var(--bg-color) solid ;
+ }
