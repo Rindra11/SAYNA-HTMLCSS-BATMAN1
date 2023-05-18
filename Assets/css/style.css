@@ -15,8 +15,8 @@
     --white-color:#ffffff;
     --black-color:#000000;
     --bg-color:#C4C4C4;
-    --gradient-color:#EDDEBF;
-    --gradient1-color:#890008;
+    --gradient-white:#EDDEBF;
+    --gradient-red:#890008;
 }
 
 *{
@@ -107,8 +107,8 @@ nav ul a:hover{
     text-decoration: none;
     color: var(--white-color);
     font-size: 22px;
-    padding: 3px 30px;
-    background: linear-gradient(8deg,var(--gradient-color),var(--gradient1-color));
+    padding: 10px 30px;
+    background: linear-gradient(80deg,var(--gradient-white),var(--gradient-red));
     box-shadow: var(--black-color) 5px 5px 60px;
 }
 /*section fleche hero*/
