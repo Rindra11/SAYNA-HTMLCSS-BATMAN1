@@ -156,6 +156,16 @@ nav ul a:hover{
 }
 
 /*section multimedia*/
+#multimedia button{
+    position: relative;
+    top: 155px;
+    background: none;
+    border: none;
+}
+#multimedia button.right{
+    right: -90%;
+}
+
 #multimedia .slider-multimedia{
     display: flex;
     width: 60%;
@@ -167,9 +177,42 @@ nav ul a:hover{
 #multimedia .slider-content{
     padding: 15px;
     background-color: #525151;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 #multimedia p{
     font-size: 12px;
 }
+#multimedia .yellow{
+    color: var(--yellow-color);
+}
 
+/*Formulaire */
+#contact{
+    background-color: rgb(61, 75, 75);
+    padding: 70px 0;
+}
+#contact .form{
+    width: 50%;
+    margin: 0 auto;
+}
+#contact h2{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+#contact .titre{
+    display: block;
+    margin: 20px 0;
+}
+#contact .form input[type='email']{
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width: 80%;
+    border-bottom: 2px solid var(--black-color);
+    background-color: transparent;
+    padding: 10px 0;
+    margin-top: 22px;
+}
   
