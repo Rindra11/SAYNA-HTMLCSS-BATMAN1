@@ -205,14 +205,74 @@ nav ul a:hover{
     display: block;
     margin: 20px 0;
 }
-#contact .form input[type='email']{
+#contact .form input[type='email'], textarea{
+    display: block;
     border-top: none;
     border-right: none;
     border-left: none;
     width: 80%;
-    border-bottom: 2px solid var(--black-color);
+    border-bottom: 2px solid rgb(120, 120, 120);
     background-color: transparent;
     padding: 10px 0;
-    margin-top: 22px;
 }
-  
+#contact .news{
+    margin: 15px 0;
+    border-bottom: 2px solid rgb(120, 120, 120);
+}
+#contact .icon img{
+    transform: rotate(90deg);
+    width: 20px;
+} 
+::-webkit-input-placeholder{
+    font-size: 15px;
+}
+::-moz-placeholder{
+    font-size: 15px;
+}
+:-ms-input-placeholder{
+    font-size: 15px;
+}
+::placeholder{
+    font-size: 15px;
+}
+/*formulaire contact btn*/
+.btn-group{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.form input[type='radio']{
+    opacity: 0;
+}
+.btn-group label{
+    cursor: pointer;
+    padding: 10px;
+    border: 2px solid;
+    -o-border-image: linear-gradient(69deg,var(--bg-color),var(--blue-color))1;
+    border-image: linear-gradient(69deg,var(--bg-color),var(--blue-color))1;
+    font-size: 15px;
+}
+input[type='submit']{
+    display: block;
+    width: 230px;
+    margin: 25px auto;
+    padding: 15px 0;
+    cursor: pointer;
+    background: linear-gradient(50deg,var(--bg-color),var(--gradient-red));
+}
+#citations{
+    margin: 90px;
+}
+#citations .citation-carte{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+#citations .citation-auteur{
+    padding-top: 30px;
+    font-size: 10px;
+    font-family:'rajdhani';
+}
+#citations .guillemet-close{
+    float: right;
+}
