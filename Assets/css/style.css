@@ -49,6 +49,21 @@ body{
     color: var(--white-color);
     font-family: 'Space Grotesk';
 }
+/*upp-bar right left*/
+.up-bar{
+    border-top: var(--bg-color) 2px solid;
+    position: relative;
+    top: 132px;
+    width: 80%;
+    left: 102px;
+}
+.left-bar{
+    border-top: var(--bg-color) 2px solid;
+    top: 132px;
+    width: 80%;
+    left: 102px;
+}
+
 
 /* section header navbar */
 nav{
@@ -275,4 +290,20 @@ input[type='submit']{
 }
 #citations .guillemet-close{
     float: right;
+}
+
+/*footer*/
+footer{
+    margin-top: 162px;
+}
+footer .text-footer{
+    text-align: center;
+    font-size: 10px;
+}
+footer .social-footer{
+    text-align: center;
+    margin: 50px 0;
+}
+footer .social-item{
+    padding: 15px;
 }
