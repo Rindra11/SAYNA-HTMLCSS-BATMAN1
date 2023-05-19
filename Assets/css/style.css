@@ -42,6 +42,8 @@ button{
 .container{
     width: 80%;
     margin: 0 auto;
+    border-left: 3.5px var(--bg-color) solid ;
+    border-right: 3.5px var(--bg-color) solid ;
 }
 
 body{
@@ -49,7 +51,7 @@ body{
     color: var(--white-color);
     font-family: 'Space Grotesk';
 }
-/*upp-bar right left*/
+/*upp-bar right left
 .up-bar{
     border-top: var(--bg-color) 2px solid;
     position: relative;
@@ -62,14 +64,16 @@ body{
     top: 132px;
     width: 80%;
     left: 102px;
-}
-
+}*/
 
 /* section header navbar */
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-bottom: 3.5px var(--bg-color) solid;
+    border-left: 3.5px var(--bg-color) solid ;
+    border-right: 3.5px var(--bg-color) solid ;
     padding: 30px 0;
 }
 /*section link */
@@ -93,6 +97,14 @@ nav ul a{
 nav ul a:hover{
     color:var(--btn-color);
 }
+/*bat-image*/
+.bat-image{
+    transition: all ease-in-out 0.3s;
+ }
+ 
+ .bat-image:hover{
+    transform: scale(1.2);
+ }
 
 /* section main*/
 #hero{
@@ -147,6 +159,8 @@ nav ul a:hover{
 /* section div batman personage cinema*/
 #batman-cinema{
     margin-top: 40px;
+    border-left: 3.5px var(--bg-color) solid ;
+    border-right: 3.5px var(--bg-color) solid ;
 }
 
 /* section div batman personage*/
@@ -169,7 +183,6 @@ nav ul a:hover{
 #batman-cinema .personnage-info{
     text-align: center;
 }
-
 /*section multimedia*/
 #multimedia button{
     position: relative;
@@ -201,7 +214,14 @@ nav ul a:hover{
 #multimedia .yellow{
     color: var(--yellow-color);
 }
-
+#multimedia .image-bande-annonce{
+    width: 50%;
+    height: 50%;
+}
+/*hover*/
+section a:hover img{
+    filter: brightness(0) saturate(100%) invert(88%) sepia(100%) saturate(1300%) hue-rotate(357deg);
+  }
 /*Formulaire */
 #contact{
     background-color: rgb(61, 75, 75);
